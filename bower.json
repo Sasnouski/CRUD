@@ -1,0 +1,12 @@
+
+
+{
+  "name": "MEAN",
+  "version": "0.0.8",
+  "dependencies": {
+    "express": "latest",
+    "angular": "latest",
+    "angular-route": "latest",
+    "angular-resource": "latest"
+  }
+}
