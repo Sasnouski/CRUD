@@ -10,6 +10,8 @@
     "express-session": "~1.7.6",
     "ejs": "~1.0.0",
     "mongoose": "~4.2.8",
-    "passport": "~0.2.1"
+    "connect-flash": "~0.1.1",
+    "passport": "~0.2.1",
+    "passport-local": "~1.0.0"
   }
 }
