@@ -1,16 +1,11 @@
 
 
 process.env.NODE_ENV = process.env.NODE_ENV || 'development';
-var express = require('./config/express'),
-    mongoose = require('mongoose'),
+var mongoose = require('./config/mongoose'),
+    express = require('./config/express'),
     passport = require('./config/passport');
-
-mongoose.connect('mongodb://localhost/mean-book');
-mongoose.connection.on('open', function() {
-    console.log('Mongoose connected.');
-});
-//var db = mongoose();
-var app = express();
+var db = mongoose();
+var app = express(db);
 var passport = passport();
 app.listen(3000);
 module.exports = app;
